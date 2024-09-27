@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gami.Core", "Gami.Core.csproj", "{2942F89D-D0D4-4CF7-8C15-ABD4B092426A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2942F89D-D0D4-4CF7-8C15-ABD4B092426A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2942F89D-D0D4-4CF7-8C15-ABD4B092426A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2942F89D-D0D4-4CF7-8C15-ABD4B092426A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2942F89D-D0D4-4CF7-8C15-ABD4B092426A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
