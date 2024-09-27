@@ -13,8 +13,8 @@ public sealed class Achievement
     public string Name { get; set; } = null!;
     public string GameId { get; set; } = null!;
     public string LibraryId { get; set; } = null!;
-    public byte[] LockedIcon { get; set; } = null!;
-    public byte[] UnlockedIcon { get; set; } = null!;
+    public string LockedIconUrl { get; set; } = null!;
+    public string UnlockedIconUrl { get; set; } = null!;
     public AchievementProgress? Progress { get; set; }
 
     public List<Game> Games { get; set; } = null!;
