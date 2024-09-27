@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>11</LangVersion>
-        <Version>0.4.3</Version>
+        <Version>0.4.4</Version>
         <Title>Gami shared library for plugins and client</Title>
         <Authors>Tom Bebbington</Authors>
         <Description>A shared library for Gami UI and plugins</Description>
