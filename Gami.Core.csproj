@@ -5,7 +5,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>11</LangVersion>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Version>0.4.1</Version>
         <Title>Gami shared library for plugins and client</Title>
         <Authors>Tom Bebbington</Authors>
