@@ -1,0 +1,30 @@
+
+name: Deploy DotNet package
+
+on:
+  release:
+    types: [published]
+
+env:
+  DOTNET_VERSION: '6.0.x'                   # set this to the dotnet version to use (e.g. '2.1.x', '3.1.x', '5.0.x')
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # For Linux, use ubuntu-latest
+    environment: dev
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v4
+
+    - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: 'Resolve Project Dependencies Using Dotnet'
+      env:
+        NUGET_API_KEY: ${{ secrets.nuget_api_key }}
+      shell: bash # For Linux, use bash
+      run: |
+         dotnet pack
+         dotnet nuget push .\bin\Release\Gami.Core.${{ github.event.release.tag_name }}.nupkg --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json

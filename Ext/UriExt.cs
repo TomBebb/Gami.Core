@@ -9,7 +9,7 @@ public static class UriExt
         return await AutoDownloadUri(uri, name);
     }
 
-    public static async ValueTask<Uri?> AutoDownloadUriOpt(this string uri, Lazy<string> name)
+    public static async ValueTask<Uri> AutoDownloadUriOpt(this string uri, Lazy<string> name)
     {
         return await AutoDownloadUri(new Uri(uri), name);
     }
