@@ -19,5 +19,5 @@ public sealed class Achievement
 
     public List<Game> Games { get; set; } = null!;
     
-    public float? Percent {get; set; }
+    public float? GlobalPercent {get; set; }
 }
