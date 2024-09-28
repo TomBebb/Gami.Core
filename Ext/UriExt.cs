@@ -26,7 +26,7 @@ public static class UriExt
 
         using var client = new HttpClient();
         var stream = await client.GetStreamAsync(uri);
-        var outStream = new FileStream(destPath, FileMode.Create, FileAccess.Write, FileShare.Read);
+        var outStream = File.Create(destPath);
         if (ext == ".webp")
             await stream.CopyToAsync(outStream);
         else
