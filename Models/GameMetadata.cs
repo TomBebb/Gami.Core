@@ -6,7 +6,7 @@ namespace Gami.Core.Models;
 
 [SuppressMessage("ReSharper", "PropertyCanBeMadeInitOnly.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-public record  GameMetadata
+public record GameMetadata
 {
     public string Description { get; set; } = "";
 
