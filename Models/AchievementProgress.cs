@@ -1,10 +1,13 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Gami.Core.Models;
 
 [SuppressMessage("ReSharper", "PropertyCanBeMadeInitOnly.Global")]
 public sealed class AchievementProgress
 {
+    [Timestamp] public byte[] Version { get; set; }
+
     public string AchievementId { get; set; } = null!;
     public Achievement Achievement { get; set; } = null!;
     public bool Unlocked { get; set; }

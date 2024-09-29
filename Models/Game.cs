@@ -11,6 +11,8 @@ namespace Gami.Core.Models;
 [SuppressMessage("ReSharper", "PropertyCanBeMadeInitOnly.Global")]
 public class Game : ReactiveObject, IGameLibraryMetadata
 {
+    [Timestamp] public byte[] Version { get; set; } = null!;
+
     [Key] public string Id { get; set; } = null!;
     public bool Installed => InstallStatus == GameInstallStatus.Installed;
     [Reactive] public DateTime ReleaseDate { get; set; }
