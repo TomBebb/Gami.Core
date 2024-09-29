@@ -9,8 +9,6 @@ namespace Gami.Core.Models;
 [SuppressMessage("ReSharper", "PropertyCanBeMadeInitOnly.Global")]
 public sealed class Achievement
 {
-    [Timestamp]
-    public byte[] Version { get; set; }
     [Key] public string Id { get; set; } = null!;
     public string Name { get; set; } = null!;
     public string GameId { get; set; } = null!;
