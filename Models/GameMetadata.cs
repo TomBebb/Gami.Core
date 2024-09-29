@@ -19,7 +19,7 @@ public record GameMetadata
     public GameMetadata Combine(GameMetadata other) =>
         new()
         {
-            Description = Description.Length == 0 ? other.Description: Description,
+            Description = Description.Length == 0 ? other.Description : Description,
             Developers = Developers.Concat(other.Developers).ToImmutableArray(),
             Genres = Genres.Concat(other.Genres).ToImmutableArray(),
             Platforms = Platforms.Concat(other.Platforms).ToImmutableArray(),

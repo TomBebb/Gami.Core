@@ -6,7 +6,7 @@ namespace Gami.Core.Ext;
 public static class ProtonMisc
 {
     private static readonly HttpClient Client = new();
-    private static readonly GitHubClient GitHub = new(new Octokit.ProductHeaderValue("Gami Games launcher"));
+    private static readonly GitHubClient GitHub = new(new ProductHeaderValue("Gami Games launcher"));
 
     public static string ResolveProtonPrefix(this IGameLibraryRef gameRef) => Path.Join(Consts.ProtonPrefixDir, gameRef.Name);
 

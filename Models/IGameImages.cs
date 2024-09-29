@@ -9,5 +9,5 @@ public interface IGameImages
     public Uri? HeaderUrl { get; set; }
     public Uri? HeroUrl { get; set; }
     public Uri? LogoUrl { get; set; }
-    
+
 }

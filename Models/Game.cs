@@ -16,11 +16,6 @@ public class Game : ReactiveObject, IGameLibraryMetadata
     [Reactive] public DateTime ReleaseDate { get; set; }
     [Reactive] public string Description { get; set; } = null!;
 
-    public Uri? IconUrl { get; set; }
-    public Uri? HeaderUrl { get; set; }
-    public Uri? HeroUrl { get; set; }
-    public Uri? LogoUrl { get; set; }
-
     public List<Achievement> Achievements { get; set; } = null!;
 
     public List<AgeRating> AgeRatings { get; set; } = null!;
@@ -30,6 +25,13 @@ public class Game : ReactiveObject, IGameLibraryMetadata
     public List<Platform> Platforms { get; set; } = null!;
     public List<Publisher> Publishers { get; set; } = null!;
     public List<Series> Series { get; set; } = null!;
+
+    [Reactive] public GameProgressStatus ProgressStatus { get; set; }
+
+    public Uri? IconUrl { get; set; }
+    public Uri? HeaderUrl { get; set; }
+    public Uri? HeroUrl { get; set; }
+    public Uri? LogoUrl { get; set; }
 
     [Reactive] public GameInstallStatus InstallStatus { get; set; }
     [Reactive] public TimeSpan Playtime { get; set; }
