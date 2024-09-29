@@ -5,8 +5,8 @@ namespace Gami.Core;
 
 public interface IGameAchievementScanner : IBasePlugin
 {
-    public ValueTask<ConcurrentBag<Achievement>> Scan(IGameLibraryRef game);
+    public IAsyncEnumerable<Achievement> Scan(IGameLibraryRef game);
 
-    public ValueTask<ConcurrentBag<AchievementProgress>> ScanProgress(
+    public IAsyncEnumerable<AchievementProgress> ScanProgress(
         IGameLibraryRef game);
 }
