@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using Gami.Core.Models;
+﻿using Gami.Core.Models;
 
 namespace Gami.Core;
 

@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Headers;
-using Gami.Core.Models;
+﻿using Gami.Core.Models;
 using Octokit;
 
 namespace Gami.Core.Ext;
