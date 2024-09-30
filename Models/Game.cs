@@ -25,6 +25,7 @@ public class Game : ReactiveObject, IGameLibraryMetadata
     public List<Platform> Platforms { get; set; } = null!;
     public List<Publisher> Publishers { get; set; } = null!;
     public List<Series> Series { get; set; } = null!;
+    public List<Tag> Tags { get; set; } = null!;
 
     [Reactive] public GameProgressStatus ProgressStatus { get; set; }
 

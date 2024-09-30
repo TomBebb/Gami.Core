@@ -16,17 +16,20 @@ public record struct GameMetadata
     public ImmutableArray<string>? Platforms { get; set; }
     public ImmutableArray<string>? Publishers { get; set; }
     public ImmutableArray<string>? Series { get; set; }
+    public ImmutableArray<string>? Tags { get; set; }
 
-    public GameMetadata Combine(GameMetadata other)
-    {
-        return new GameMetadata
+    public DateOnly? ReleaseDate { get; set; }
+
+    public GameMetadata Combine(GameMetadata other) =>
+        new()
         {
             Description = Description ?? other.Description,
             Developers = Developers ?? other.Developers,
             Genres = Genres ?? other.Genres,
             Platforms = Platforms ?? other.Platforms,
             Publishers = Publishers ?? other.Publishers,
-            Series = Series ?? other.Series
+            Series = Series ?? other.Series,
+            Tags = Tags ?? other.Tags,
+            ReleaseDate = ReleaseDate ?? other.ReleaseDate
         };
-    }
 }
