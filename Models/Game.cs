@@ -13,7 +13,7 @@ public class Game : ReactiveObject, IGameLibraryMetadata
 {
     [Key] public string Id { get; set; } = null!;
     public bool Installed => InstallStatus == GameInstallStatus.Installed;
-    [Reactive] public DateTime ReleaseDate { get; set; }
+    [Reactive] public DateTime? ReleaseDate { get; set; }
     [Reactive] public string Description { get; set; } = null!;
 
     public List<Achievement> Achievements { get; set; } = null!;
