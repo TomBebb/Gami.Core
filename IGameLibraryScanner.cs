@@ -2,7 +2,7 @@
 
 namespace Gami.Core;
 
-public interface IGameLibraryScanner : IBasePlugin
+public interface IGameLibraryScanner : IBaseAddon
 {
     public IAsyncEnumerable<IGameLibraryMetadata> Scan();
 }

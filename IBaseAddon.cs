@@ -1,6 +1,6 @@
 ﻿namespace Gami.Core;
 
-public interface IBasePlugin
+public interface IBaseAddon
 {
     public string Type { get; }
 }

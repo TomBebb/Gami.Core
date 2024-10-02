@@ -1,6 +1,6 @@
 ﻿namespace Gami.Core;
 
-public interface IGameLibraryAuth : IBasePlugin
+public interface IGameLibraryAuth : IBaseAddon
 {
     public bool NeedsAuth { get; }
 

@@ -2,7 +2,7 @@
 
 namespace Gami.Core;
 
-public interface IGameAchievementScanner : IBasePlugin
+public interface IGameAchievementScanner : IBaseAddon
 {
     public IAsyncEnumerable<Achievement> Scan(IGameLibraryRef game);
 

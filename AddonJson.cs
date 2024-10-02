@@ -4,7 +4,7 @@ using System.Text.Json;
 namespace Gami.Core;
 
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
-public static class PluginJson
+public static class AddonJson
 {
     private static readonly JsonSerializerOptions JsonSerializerOptions = new(JsonSerializerDefaults.Web);
 

@@ -2,7 +2,7 @@
 
 namespace Gami.Core;
 
-public interface IGameMetadataScanner : IBasePlugin
+public interface IGameMetadataScanner : IBaseAddon
 {
     public ValueTask<GameMetadata> ScanMetadata(IGameLibraryRef game);
 }

@@ -3,7 +3,7 @@ using Gami.Core.Models;
 
 namespace Gami.Core;
 
-public interface IGameLibraryLauncher : IBasePlugin
+public interface IGameLibraryLauncher : IBaseAddon
 {
     public void Launch(IGameLibraryRef gameRef);
 

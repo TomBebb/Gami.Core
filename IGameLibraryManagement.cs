@@ -2,7 +2,7 @@ using Gami.Core.Models;
 
 namespace Gami.Core;
 
-public interface IGameLibraryManagement : IBasePlugin
+public interface IGameLibraryManagement : IBaseAddon
 {
     public ValueTask Install(IGameLibraryRef game);
     public void Uninstall(IGameLibraryRef game);

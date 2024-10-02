@@ -2,7 +2,7 @@
 
 namespace Gami.Core;
 
-public interface IGameIconLookup : IBasePlugin
+public interface IGameIconLookup : IBaseAddon
 {
     public ValueTask<Uri?> LookupIcon(IGameLibraryRef id);
 }
