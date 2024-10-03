@@ -20,6 +20,8 @@ public record struct GameMetadata
 
     public DateOnly? ReleaseDate { get; set; }
 
+    public DateTime? LastPlayed { get; set; }
+
     public GameMetadata Combine(GameMetadata other) =>
         new()
         {
@@ -30,6 +32,7 @@ public record struct GameMetadata
             Publishers = Publishers ?? other.Publishers,
             Series = Series ?? other.Series,
             Tags = Tags ?? other.Tags,
-            ReleaseDate = ReleaseDate ?? other.ReleaseDate
+            ReleaseDate = ReleaseDate ?? other.ReleaseDate,
+            LastPlayed = LastPlayed ?? other.LastPlayed,
         };
 }

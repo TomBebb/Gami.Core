@@ -2,6 +2,7 @@
 
 public class ScannedGameLibraryMetadata : GameLibraryRef, IGameLibraryMetadata
 {
+    public DateTime? LastPlayed { get; set; }
     public GameInstallStatus InstallStatus { get; set; }
     public TimeSpan Playtime { get; set; }
     public Uri? IconUrl { get; set; }
