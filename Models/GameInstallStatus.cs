@@ -5,5 +5,6 @@ public enum GameInstallStatus
     Installed,
     Installing,
     InLibrary,
-    Queued
+    Queued,
+    Uninstalling,
 }
